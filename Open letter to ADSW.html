@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>IITD Webmail :: Welcome to IITD Webmail</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0">
+<meta name="theme-color" content="#f4f4f4">
+<meta name="msapplication-navbutton-color" content="#f4f4f4">
+
+	<link rel="shortcut icon" href="skins/classic/images/IITD_Logob.png?s=1579266408">
+
+	<link rel="stylesheet" href="skins/elastic/deps/bootstrap.min.css?s=1612812589">
+			<link rel="stylesheet" href="skins/elastic/styles/styles.css?s=1612812581">
+		<link rel="stylesheet" href="skins/elastic/styles/print.css?s=1612812581">
+		<link rel="stylesheet" href="skins/elastic/styles/cc-roundcube.css?s=1583237937">
+	<link rel="shortcut icon" type="image/png" href="favicon/favicon.png?s=1686120293">
+<link rel="stylesheet" type="text/css" href="plugins/libkolab/skins/elastic/libkolab.min.css?s=1617271520">
+<link rel="stylesheet" type="text/css" href="plugins/jqueryui/themes/elastic/jquery-ui.css?s=1612812580">
+<script src="program/js/jquery.min.js?s=1612812585"></script>
+<script src="program/js/common.min.js?s=1612812581"></script>
+<script src="program/js/app.min.js?s=1612812581"></script>
+<script src="program/js/jstz.min.js?s=1612812585"></script>
+<script>
+/*
+        @licstart  The following is the entire license notice for the 
+        JavaScript code in this page.
+
+        Copyright (C) The Roundcube Dev Team
+
+        The JavaScript code in this page is free software: you can redistribute
+        it and/or modify it under the terms of the GNU General Public License
+        as published by the Free Software Foundation, either version 3 of
+        the License, or (at your option) any later version.
+
+        The code is distributed WITHOUT ANY WARRANTY; without even the implied
+        warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+        See the GNU GPL for more details.
+
+        @licend  The above is the entire license notice
+        for the JavaScript code in this page.
+*/
+var rcmail = new rcube_webmail();
+rcmail.set_env({"task":"login","standard_windows":false,"locale":"en_US","devel_mode":null,"rcversion":10411,"cookie_domain":"","cookie_path":"/","cookie_secure":true,"skin":"elastic","extwin":1,"blankpage":"skins/elastic/watermark.html","refresh_interval":60,"session_lifetime":600,"action":"print","comm_path":"./?_task=login","compose_extwin":true,"date_format":"dd-mm-yy","date_format_localized":"DD-MM-YYYY","allow_save_device_30days":true,"twofactor_formfield_as_password":false,"libcal_settings":{"date_format":"DD-MM-YYYY","time_format":"HH:mm","date_short":"DD-MM","date_long":"DD MMM YYYY","date_agenda":"dddd DD-MM","dates_long":"DD MMM YYYY","first_day":1,"timezone":5.5,"dst":"0","days":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"days_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"months_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"today":"Today"},"request_token":"EwafbcuXxGj7eVxTqLuc8pbGMhZwMhS3"});
+rcmail.add_label({"loading":"Loading...","servererror":"Server Error!","connerror":"Connection Error (Failed to reach the server)!","requesttimedout":"Request timed out","refreshing":"Refreshing...","windowopenerror":"The popup window was blocked!","uploadingmany":"Uploading files...","uploading":"Uploading file...","close":"Close","save":"Save","cancel":"Cancel","alerttitle":"Attention","confirmationtitle":"Are you sure...","delete":"Delete","continue":"Continue","ok":"OK","twofactor_gauthenticator.activate":"Activate","twofactor_gauthenticator.twofactor_gauthenticator":"2-Factor Authentication","twofactor_gauthenticator.code":"Google Authenticator Code","twofactor_gauthenticator.two_step_verification_form":"2-Factor Authentication Code:","twofactor_gauthenticator.secret":"Secret","twofactor_gauthenticator.qr_code":"QR Code","twofactor_gauthenticator.msg_infor":"You can scan this QR code containing the 2-Factor settings using a TOTP compatible app such as \u003Ca href=\"https://github.com/google/google-authenticator\" target=\"_blank\"\u003Egoogle-authenticator\u003C/a\u003E","twofactor_gauthenticator.show_secret":"Show secret","twofactor_gauthenticator.hide_secret":"Hide secret","twofactor_gauthenticator.create_secret":"Create secret","twofactor_gauthenticator.show_qr_code":"Show QR Code","twofactor_gauthenticator.hide_qr_code":"Hide QR Code","twofactor_gauthenticator.recovery_codes":"Recovery codes","twofactor_gauthenticator.show_recovery_codes":"Show recovery codes","twofactor_gauthenticator.hide_recovery_codes":"Hide recovery codes","twofactor_gauthenticator.setup_all_fields":"Fill all fields (make sure you click save to store your settings)","twofactor_gauthenticator.enrollment_dialog_title":"2-Factor authentication enrollment","twofactor_gauthenticator.enrollment_dialog_msg":"\u003Cstrong\u003E2-Factor authentication codes\u003C/strong\u003E are required for increased security, please configure them now.","twofactor_gauthenticator.check_code":"Check code","twofactor_gauthenticator.code_ok":"Code OK","twofactor_gauthenticator.code_ko":"Incorrect code","twofactor_gauthenticator.dont_ask_me_30days":"Don&#39;t ask me codes again on this computer for 30 days","twofactor_gauthenticator.check_code_to_activate":"To save, please scan the QR Code and enter the current 2-Factor code below.","twofactor_gauthenticator.successfully_saved":"2-Factor authentication settings saved successfully.","libcalendaring.itipaccepted":"Accept","libcalendaring.itiptentative":"Maybe","libcalendaring.itipdeclined":"Decline","libcalendaring.itipdelegated":"Delegate","libcalendaring.expandattendeegroup":"Substitute with group members","libcalendaring.expandattendeegroupnodata":"Unable to substitute this group. No members found.","libcalendaring.statusorganizer":"Organizer","libcalendaring.statusaccepted":"Accepted","libcalendaring.statusdeclined":"Declined","libcalendaring.statusdelegated":"Delegated","libcalendaring.statusunknown":"Unknown","libcalendaring.statusneeds-action":"Needs action","libcalendaring.statustentative":"Tentative","libcalendaring.statuscompleted":"Completed","libcalendaring.statusin-process":"In process","libcalendaring.delegatedto":"Delegated to:","libcalendaring.delegatedfrom":"Delegated from:","libcalendaring.showmore":"Show more...","back":"Back","errortitle":"An error occurred!","options":"Options","plaintoggle":"Plain text","htmltoggle":"HTML","previous":"Previous","next":"Next","select":"Select","browse":"Browse","choosefile":"Choose file...","choosefiles":"Choose files..."});
+rcmail.gui_container("loginfooter","login-footer");rcmail.gui_object('loginform', 'login-form');
+rcmail.gui_object('message', 'messagestack');
+</script>
+
+<script src="plugins/jqueryui/js/jquery-ui.min.js?s=1612812580"></script>
+<script src="plugins/twofactor_gauthenticator/twofactor_gauthenticator.js?s=1634636982"></script>
+<script src="plugins/twofactor_gauthenticator/qrcode.min.js?s=1634636982"></script>
+<script src="plugins/libcalendaring/libcalendaring.js?s=1617270964"></script>
+
+</head>
+<body class="task-login action-print">
+			<div id="print-layout">
+	
+
+<h1 class="voice">IITD Webmail Login</h1>
+
+<div id="layout-content" class="selected no-navbar" role="main">
+	<img src="skins/classic/images/IITD_Logob.png?s=1579266408" data-src-small="skins/classic/images/IITD_Logob.png?s=1579266408" id="logo" alt="Logo">
+	<form id="login-form" name="login-form" method="post" class="propform" action="./?_task=login">
+<input type="hidden" name="_token" value="EwafbcuXxGj7eVxTqLuc8pbGMhZwMhS3"><input type="hidden" name="_extwin" value="1">
+
+	<input type="hidden" name="_task" value="login"><input type="hidden" name="_action" value="login"><input type="hidden" name="_timezone" id="rcmlogintz" value="_default_"><input type="hidden" name="_url" id="rcmloginurl" value="_task=mail&amp;_safe=1&amp;_uid=686&amp;_mbox=Sent&amp;_action=print&amp;_extwin=1"><table><tbody><tr><td class="title"><label for="rcmloginuser">Username</label>
+</td>
+<td class="input"><input name="_user" id="rcmloginuser" required maxlength="50" size="40" autocapitalize="off" autocomplete="off" type="text"></td>
+</tr>
+<tr><td class="title"><label for="rcmloginpwd">Password</label>
+</td>
+<td class="input"><input name="_pass" id="rcmloginpwd" required maxlength="50" size="40" autocapitalize="off" autocomplete="off" type="password"></td>
+</tr>
+</tbody>
+</table>
+<p class="formbuttons"><button type="submit" id="rcmloginsubmit" class="button mainaction submit">Login</button>
+</p>
+
+		<div id="login-footer" role="contentinfo">
+			IITD Webmail
+			
+							&nbsp;&bull;&nbsp; <a href="https://csc.iitd.ac.in" target="_blank" class="support-link">Get support</a>
+						
+		</div>
+	</form>
+</div>
+
+<noscript>
+	<p class="noscriptwarning">Warning: This webmail service requires Javascript! In order to use it please enable Javascript in your browser's settings.</p>
+</noscript>
+
+</div>
+<a href="https://csc.iitd.ac.in" target="_blank" id="supportlink" class="hidden">Get support</a>
+
+<div id="messagestack"></div>
+
+<script src="skins/elastic/deps/bootstrap.bundle.min.js?s=1612812589"></script>
+<script src="skins/elastic/ui.min.js?s=1612812581"></script>
+
+</body>
+</html>
+
+
+<div class="cc-mg"><p id="csc-msg" style="text-align:justify;color:red;font-family:sans-sarif;position: relative;" class="col-md-10 col-sm-10 mx-auto">Important: Computer Service Centre (CSC), IIT Delhi or any other IIT Delhi official never sends email for getting user information. Kindly discard such phishing emails. Do not respond to such mail by visiting the link and entering your password.</p>
+</div>
+<script>
+$(function() {
+rcmail.init();
+});
+</script>
+
+
+</body>
